@@ -19,10 +19,8 @@ build_script:
 test_script:
   - npm run lint && npm test # скрипт тестирования
 
-run_stript:
+after_build:
   - npm run start # запуск
-
-test_e2e_script:
   - npm run e2e # скрипт тестирования e2e
 
 deploy_script: # скрипт развёртывания
