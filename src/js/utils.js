@@ -7,7 +7,7 @@ export function refineCardNumber(cardNumber) {
 export function luhnAlgorithm(card) {
   const cardNumbers = refineCardNumber(card).split('').map(Number);
 
-  let checksum = cardNumbers.at(-1);
+  let checksum = cardNumbers[cardNumbers.length - 1];
   const parity = (cardNumbers.length - 2) % 2;
 
   for (const [index, num] of cardNumbers.slice(0, -1).entries()) {
