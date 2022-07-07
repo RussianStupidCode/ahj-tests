@@ -1,0 +1,34 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 60px;
+  height: 30px;
+}
+
+.card-notactive {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.card-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
