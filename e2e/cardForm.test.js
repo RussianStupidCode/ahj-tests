@@ -7,11 +7,7 @@ describe('card form', () => {
   let page = null;
   const baseUrl = 'http://localhost:8888';
   beforeAll(async () => {
-    browser = await puppeteer.launch({
-      handless: false,
-      slowMo: 50,
-      devtools: true,
-    });
+    browser = await puppeteer.launch();
     page = await browser.newPage();
   });
 
